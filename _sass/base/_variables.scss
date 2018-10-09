@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+$theme-colors: (
+  (
+    "primary":    #00A4E4,
+    "danger":     #EF3E42,
+    "dark":       #472A2B
+  )
+);
+
+$enable-shadows:            false;
+$enable-gradients:          false;
+
+$font-family-base:          'Nunito Sans', sans-serif;

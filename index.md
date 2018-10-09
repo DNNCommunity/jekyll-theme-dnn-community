@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Dnn Community Jekyll template
 ---
 
 # Mou
