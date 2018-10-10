@@ -1,0 +1,9 @@
+
+header{  
+  h2{font-size:1.2rem;}
+  @include media-breakpoint-up(sm) {
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+}
