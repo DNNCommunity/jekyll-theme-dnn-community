@@ -1,0 +1,11 @@
+- title: Home
+  url: /index.html
+- title: Bootstrap Sample
+  url: /bootstrap.html
+- title: Section
+  url: /section.html
+  sublinks:
+    - title: SubPage 1
+      url: /subpage1.html
+    - title: SubPage 2
+      url: /subpage2.html

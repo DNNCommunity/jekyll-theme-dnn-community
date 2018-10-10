@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Documentation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTop">
+        <ul class="navbar-nav">
+            {% assign links = site.data.navigation %}
+            {% for link in links %}
+                {% assign class = nil %}
+                {% if page.url contains link.url %}
+                    {% assign class = 'active' %}
+                {% endif %}
+                {% if link.sublinks %}
+                    <li class="nav-item dropdown {{ class }}">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">{{ link.title }}</a>
+                        <div class="dropdown-menu">
+                            {% for sublink in link.sublinks %}
+                                <a href="{{ site.baseurl }}{{ sublink.url }}" class="dropdown-item">{{ sublink.title }}</a>
+                            {% endfor %}
+                        </div>
+                    </li>
+                {% else %}
+                    <li class="nav-item {{ class }}">
+                        <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
