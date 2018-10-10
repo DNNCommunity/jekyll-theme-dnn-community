@@ -3,10 +3,6 @@ layout: page
 title: Dnn Community Jekyll template
 ---
 
-# Mou
-
-![Mou icon](http://mouapp.com/Mou_128.png)
-
 ## Overview
 
 **Mou**, the missing Markdown editor for *web developers*.
