@@ -2,5 +2,12 @@
 layout: default
 ---
 <div class="container">
-    {{ content }}
+    <div class="row">
+        <div class="col-sm-8">
+            {{ content }}
+        </div>
+        <div class="col-sm-4">
+            {% include contributors.html %}
+        </div>
+    </div>
 </div>

@@ -1,0 +1,11 @@
+
+<div class="card border-primary my-3 w-100">
+    <div class="card-header">Contributors</div>
+    <div class="card-body text-primary">
+        {% for contributor in site.github.contributors | sort: 'contributions', 'last' %}
+            {{ contributor.login }}
+            <br />
+            {{ contributor.contributions}}
+        {% endfor %}
+    </div>
+</div>
