@@ -1,13 +1,15 @@
-
-<div class="sticky-top">
-    <a href="{{ site.github.releases_url }}" class="btn btn-primary w-100 my-3">
+<div class="sticky-top pt-3">
+    <div class="d-none d-md-block">
+        {% include sidemenu.html %}
+    </div>
+    <a href="{{ site.github.releases_url }}" class="btn btn-primary w-100 mb-3">
         <i class="fas fa-download"></i>&nbsp;Download
     </a>
     <a href="{{ site.github.issues_url }}" class="btn btn-primary w-100 mb-3">
             {% octicon issue-opened height:18 style:fill:currentColor; %}&nbsp;Repport an issue
     </a>
     <a href="{{ site.github.repository_url }} " class="btn btn-primary w-100 mb-3">
-            {% octicon mark-github height:18 style:fill:currentColor %}&nbsp;Contribute
+            {% octicon mark-github height:18 style:fill:currentColor; %}&nbsp;Contribute
     </a>
     {% include contributors.html %}
 </div>

@@ -3,7 +3,6 @@
 - title: Bootstrap Sample
   url: /bootstrap.html
 - title: Section
-  url: /section.html
   sublinks:
     - title: SubPage 1
       url: /subpage1.html
