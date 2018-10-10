@@ -1,11 +1,11 @@
 
-<div class="card border-primary my-3 w-100 contributors">
+<div class="card border-primary mb-3 w-100 contributors">
     <div class="card-header">Contributors</div>
     <ul class="list-group list-group-flush">            
         {% for contributor in site.github.contributors | sort: 'contributions', 'last' %}
         <li class="list-group-item">
             <a href="{{  contributor.html_url  }}" target="_blank">
-                <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login" }}" class="rounded" />
+                <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}" class="rounded" />
                 {{ contributor.login }}
                 <span class="badge badge-primary">{{ contributor.contributions }}</span>
             </a>
