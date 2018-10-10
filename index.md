@@ -156,8 +156,5 @@ Left         | Center        | Right
 
 #Testing github variables
 
-## site
-{{ site | inspect }}
-
 ## github
 {{ site.github | inspect}}
