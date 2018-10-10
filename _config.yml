@@ -1,1 +1,3 @@
 repository: DNNCommunity/DNN.FormAndList
+plugins:
+  - jekyll-octicons
