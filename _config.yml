@@ -1,6 +1,4 @@
 # The repository referenced here only applies to local development in order to preview this skin in the context of an actual repository
 repository: DNNCommunity/DNN.FormAndList
-plugins:
-  - jekyll-octicons
 markdown: kramdown
 highlighter: rouge

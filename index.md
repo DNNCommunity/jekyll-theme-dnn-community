@@ -13,3 +13,4 @@ This repository contains the theme for Dnn Community github projects documentati
 ![Set the github pages options](assets/images/Screenshots/Capture-gh-pages-settings.jpg "Set the github pages options")
 3. Navigate to that site url and confirm the site works
 ![Working site](assets/images/Screenshots/Capture-working-site.jpg "Working site")
+4. In the docs folder, edit the _config.yml file
