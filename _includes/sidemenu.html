@@ -1,24 +1,30 @@
 <div class="card border-primary mb-3 w-100 side-navigation">
     <div class="card-header">Documentation</div>
-    <ul>
-        {% assign links = site.data.navigation %}
-        {% for link in links}
-            {% assign class = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = 'active' %}
-            {% endif %}
-            {% if link.sublinks %}
-                <li>
-                    {{ link.title }}
-                    <ul>
-                        {% for sublink in link.sublinks %}
-                            <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </li>
-            {% else %}
-            <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+    <div class="card-body">
+        <ul>
+            {% assign links = site.data.navigation %}
+            {% for link in links}
+                {% assign class = nil %}
+                {% if page.url contains link.url %}
+                    {% assign class = 'active' %}
+                {% endif %}
+                {% if link.sublinks %}
+                    <li>
+                        {{ link.title }}
+                        <ul>
+                            {% for sublink in link.sublinks %}
+                                {% assign subclass = nil %}
+                                {% if page.url contains sublink.url %}
+                                    {% assign subclass = 'active' %}
+                                {% endif %}
+                                <li><a href="{{ site.baseurl }}{{ sublink.url }}" class="{{ subclass }}">{{ sublink.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                <li><a href="{{ site.baseurl }}{{ link.url }}" class="{{ class }}">{{ link.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </div>

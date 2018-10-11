@@ -10,5 +10,7 @@ h3, h4{text-transform: uppercase;}
 
 .side-navigation ul {list-style-type: none; padding-left:1em; }
 
+.side-navigation a.active {font-weight: bold;}
+
 // ensure images are not shown larger than available space
 .docs-content img{max-width:100%;}
