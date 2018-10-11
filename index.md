@@ -13,4 +13,19 @@ This repository contains the theme for Dnn Community github projects documentati
 ![Set the github pages options](assets/images/Screenshots/Capture-gh-pages-settings.jpg "Set the github pages options")
 3. Navigate to that site url and confirm the site works
 ![Working site](assets/images/Screenshots/Capture-working-site.jpg "Working site")
-4. In the docs folder, edit the _config.yml file
+4. In the docs folder, edit the _config.yml file, delete everything and replace it by this:
+
+```yaml
+remote_theme: DnnCommunity/jekyll-theme-dnn-community
+```
+
+5. Navigate to https://DnnCommunity.github.io/_repositoryName_ replacing _repositoryName by the actual repository name and confirm you see the Dnn Community theme.
+
+### Setting up the navigation menu
+In order to see your pages in the navigation menu, you need to create a data file that will contain your pages structure.
+1. Create a file in your docs/_data folder that is called navigation.yml and include your index page, for each page you can provide a name and a url. Even though your home page is named index.md, it will get renamed as index.html when the site compiles.
+
+```yaml
+- title: Home
+  url: /index.html
+```
