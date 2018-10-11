@@ -1,5 +1,7 @@
 - title: Home
   url: /index.html
+- title: Github Metadata
+  url: /github-metadata.html
 - title: Bootstrap Sample
   url: /bootstrap.html
 - title: Section
