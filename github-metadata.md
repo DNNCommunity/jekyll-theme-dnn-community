@@ -16,7 +16,7 @@ For instance, if you need the project name, you can use in any markdown file the
 
 Most of the sidebar content located on the side bar of this page is populated from this metadata.
 
-Here is the full list of the contents of the site.github collection for this site:
+Here is the full list of the contents of the site object for this site:
 
 {% highlight json %}
     {{ site.github | json }}

@@ -17,7 +17,7 @@ This repository contains the theme for Dnn Community github projects documentati
 ```yaml
 remote_theme: DnnCommunity/jekyll-theme-dnn-community
 ```
-5. Navigate to https://DnnCommunity.github.io/_repositoryName_ replacing _repositoryName by the actual repository name and confirm you see the Dnn Community theme.
+5. Navigate to https://DnnCommunity.github.io/_repositoryName_ replacing _repositoryName_ by the actual repository name and confirm you see the Dnn Community theme.
 
 ### Setting up the navigation menu
 In order to see your pages in the navigation menu, you need to create a data file that will contain your pages structure.
