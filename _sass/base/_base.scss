@@ -7,3 +7,6 @@ h1{font-weight: bold;}
 h2, h3{opacity: 0.7;}
 
 h3, h4{text-transform: uppercase;}
+
+// ensure images are not shown larger than available space
+.docs-content img{max-width:100%;}
