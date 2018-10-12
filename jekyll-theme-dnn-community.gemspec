@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-dnn-community"
   spec.version       = "0.1.2"
-  spec.authors       = ["valadas"]
-  spec.email         = ["info@danielvaladas.com"]
+  spec.authors       = ["Dnn Community"]
+  spec.email         = ["community@dnnsoftware.com"]
 
   spec.summary       = "This is a theme for Dnn community modules documentation"
   spec.homepage      = "https://dnnsoftware.com"
