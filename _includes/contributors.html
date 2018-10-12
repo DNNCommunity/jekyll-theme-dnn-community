@@ -3,10 +3,16 @@
     <div class="card-header">Contributors</div>
     <ul class="list-group list-group-flush">            
         {% for contributor in site.github.contributors | sort: 'contributions', 'last' %}
-        <li class="list-group-item">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <a href="{{  contributor.html_url  }}" target="_blank">
+                    <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}" class="rounded" />
+                </a> 
+                <a href="{{  contributor.html_url  }}" target="_blank">
+                    {{ contributor.login }}
+                </a>
+            </div>
             <a href="{{  contributor.html_url  }}" target="_blank">
-                <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}" class="rounded" />
-                {{ contributor.login }}
                 <span class="badge badge-primary">{{ contributor.contributions }}</span>
             </a>
         </li>  
