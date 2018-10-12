@@ -13,11 +13,25 @@ This repository contains the theme for Dnn Community github projects documentati
 ![Set the github pages options](assets/images/Screenshots/Capture-gh-pages-settings.jpg "Set the github pages options")
 3. Navigate to that site url and confirm the site works.
 ![Working site](assets/images/Screenshots/Capture-working-site.jpg "Working site")
-4. In the docs folder, edit the _config.yml file, delete everything and replace it by this:
+4. In the docs folder, edit the _config.yml file, delete everything and replace it by the following but replacing **ProjectName** by the actual project name. The repository is not strictly required for hosting on github but needed in order to build documentation locally:
 ```yaml
 remote_theme: DnnCommunity/jekyll-theme-dnn-community
+repository: DnnCommunity/ProjectName
 ```
 5. Navigate to https://DnnCommunity.github.io/_repositoryName_ replacing _repositoryName_ by the actual repository name and confirm you see the Dnn Community theme.
+6. This step is not required to use on github gut to be able to build locally you also need to create a Gemfile containing the following:
+```yaml
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+gem 'github-pages', group: :jekyll_plugins
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+```
+7. Only if you need to build locally, clone the repository, open a terminal (or command prompt) in the docs folder and run the following command:
+```
+bundle exec jekyll serve
+```
+Then navigate to http://127.0.0.1:4000
 
 ### Setting up the navigation menu
 In order to see your pages in the navigation menu, you need to create a data file that will contain your pages structure.
