@@ -21,6 +21,7 @@
             {% else %}
             <a href="{{ site.baseurl }}{{ link.url }}" class="list-group-item {{ class }}">{{ link.title }}</a>
             {% endif %}
+            {% assign class = nil %}
         {% endfor %}
     </div>
 </div>
