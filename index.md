@@ -33,6 +33,8 @@ bundle exec jekyll serve
 ```
 Then navigate to http://127.0.0.1:4000
 
+8.Modify your .gitignore file and add ```[Dd]ocs/_site``` to it to prevent commiting local site builds.
+
 ### Setting up the navigation menu
 In order to see your pages in the navigation menu, you need to create a data file that will contain your pages structure.
 1. Create a file in your docs/_data folder that is called navigation.yml and include your index page, for each page you can provide a title and a url. Even though your home page is named index.md, it will get renamed as index.html when the site compiles.
