@@ -26,3 +26,19 @@ In order to see your pages in the navigation menu, you need to create a data fil
 - title: Home
   url: /index.html
 ```
+2. If you do need to have sections, replace the **url** by sub **sublinks** and repeat the same as step one inside of that node. (currently sections just contain pages, they have no content on themselves). Here is how it looks for this page right now:
+
+```yaml
+- title: Home
+  url: /index.html
+- title: Github Metadata
+  url: /github-metadata.html
+- title: Bootstrap Sample
+  url: /bootstrap.html
+- title: Section
+  sublinks:
+    - title: SubPage 1
+      url: /subpage1.html
+    - title: SubPage 2
+      url: /subpage2.html
+```
