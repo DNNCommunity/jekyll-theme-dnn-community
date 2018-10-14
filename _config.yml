@@ -2,3 +2,5 @@
 repository: DNNCommunity/DNN.FormAndList
 markdown: kramdown
 highlighter: rouge
+plugins:
+  - jekyll-seo-tag
