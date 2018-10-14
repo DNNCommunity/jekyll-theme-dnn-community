@@ -4,7 +4,7 @@
         {% assign links = site.data.navigation %}
         {% for link in links}
             {% assign class = nil %}
-            {% if page.url contains link.url %}
+            {% if page.url contains link.url or (forloop.first and page.path contains 'index.md') %}
                 {% assign class = 'active' %}
             {% endif %}
             {% if link.sublinks %}
