@@ -16,7 +16,7 @@ h3, h4{text-transform: uppercase;}
 .docs-content img{max-width:100%;}
 
 .card-header {
-    background-color: #472A2B;
+    background-color: theme-color('dark');
     color: #fff;
     font-weight: bold;
 }
@@ -26,17 +26,17 @@ h3, h4{text-transform: uppercase;}
 }
 .list-group-item:hover {
     background-color: #f8f9fa;
-    color: #00A4E4;
+    color: theme-color('primary');
     font-weight: normal;
 }
 .list-group-item.active {
-    background-color: rgba(0, 0, 0, .05);
-    color: #00A4E4;
+    background-color: theme-color('lighter');
+    color: theme-color('primary');
     font-weight: normal;
     border-width: 0px;
 }
 .list-group-item-light {
     font-weight: bold;
-    background-color: rgba(0, 0, 0, .08);
+    background-color: theme-color('light');
 }
   
