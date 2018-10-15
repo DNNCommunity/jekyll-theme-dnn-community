@@ -14,3 +14,29 @@ h3, h4{text-transform: uppercase;}
 
 // ensure images are not shown larger than available space
 .docs-content img{max-width:100%;}
+
+.card-header {
+    background-color: theme-color('dark');
+    color: #fff;
+    font-weight: bold;
+}
+.list-group-item {
+    padding: 0.5rem 1.25rem;
+    border-width: 0px;
+}
+.list-group-item:hover {
+    background-color: theme-color('lightest');
+    color: theme-color('primary');
+    font-weight: normal;
+}
+.list-group-item.active {
+    background-color: theme-color('lighter');
+    color: theme-color('primary');
+    font-weight: normal;
+    border-width: 0px;
+}
+.list-group-item-light {
+    font-weight: bold;
+    background-color: theme-color('light');
+}
+  

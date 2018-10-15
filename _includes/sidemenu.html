@@ -6,20 +6,26 @@
             {% assign class = nil %}
             {% if page.url contains link.url or (forloop.first and page.path contains 'index.md') %}
                 {% assign class = 'active' %}
+                {% assign selectedIcon = '<i class="fas fa-caret-right"></i> ' %}
+            {% else %}
+                {% assign selectedIcon = '' %}
             {% endif %}
             {% if link.sublinks %}
-                <div class="list-group-item-light p-2">
+                <div class="list-group-item-light p-1 pl-3">
                     {{ link.title }}
                 </div>
                 {% for sublink in link.sublinks %}
                     {% assign subclass = nil %}
                     {% if page.url contains sublink.url %}
                         {% assign subclass = 'active' %}
+                        {% assign subSelectedIcon = '<i class="fas fa-caret-right"></i> ' %}
+                    {% else %}
+                        {% assign subSelectedIcon = '' %}
                     {% endif %}
-                    <a href="{{ site.baseurl }}{{ sublink.url }}" class="list-group-item {{ subclass }}">{{ sublink.title }}</a>
+                    <a href="{{ site.baseurl }}{{ sublink.url }}" class="list-group-item {{ subclass }}">{{ subSelectedIcon }}{{ sublink.title }}</a>
                 {% endfor %}
             {% else %}
-            <a href="{{ site.baseurl }}{{ link.url }}" class="list-group-item {{ class }}">{{ link.title }}</a>
+            <a href="{{ site.baseurl }}{{ link.url }}" class="list-group-item {{ class }}">{{ selectedIcon }}{{ link.title }}</a>
             {% assign class = nil %}
             {% endif %}
         {% endfor %}
