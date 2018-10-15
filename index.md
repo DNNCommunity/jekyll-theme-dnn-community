@@ -20,13 +20,12 @@ repository: DnnCommunity/ProjectName
 ```
 5. Navigate to https://DnnCommunity.github.io/_repositoryName_ replacing _repositoryName_ by the actual repository name and confirm you see the Dnn Community theme.
 6. This step is not required to use on github gut to be able to build locally you also need to create a Gemfile containing the following:
-```yaml
+~~~ yaml
 # frozen_string_literal: true
-
 source "https://rubygems.org"
 gem 'github-pages', group: :jekyll_plugins
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-```
+~~~
 7. Only if you need to build locally, clone the repository, open a terminal (or command prompt) in the docs folder and run the following command:
 ```
 bundle exec jekyll serve
