@@ -25,7 +25,7 @@ h3, h4{text-transform: uppercase;}
     border-width: 0px;
 }
 .list-group-item:hover {
-    background-color: #f8f9fa;
+    background-color: theme-color('lightest');
     color: theme-color('primary');
     font-weight: normal;
 }
