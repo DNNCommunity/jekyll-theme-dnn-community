@@ -26,7 +26,7 @@ source "https://rubygems.org"
 gem 'github-pages', group: :jekyll_plugins
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 ~~~
-7. Only if you need to build locally, clone the repository, open a terminal (or command prompt) in the docs folder and run the following command:
+7. Only if you need to build locally, clone the repository, open a terminal (or command prompt) in the docs folder and run the following command. `Note: Please see Local Development section below for more information on getting setup to run this command.`
 ```
 bundle exec jekyll serve
 ```
@@ -57,3 +57,14 @@ In order to see your pages in the navigation menu, you need to create a data fil
     - title: SubPage 2
       url: /subpage2.html
 ```
+
+## Local Development
+
+Install Jekyll (follow instructions as per your platform). Please read [Jekyll installation](https://jekyllrb.com/docs/)
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-dnn-community.gemspec` accordingly.
